@@ -1,0 +1,43 @@
+{
+  "dependencies": {
+    "@discordjs/builders": "^0.6.0",
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "@keyv/mongo": "^1.1.0",
+    "@types/require-all": "^3.0.1",
+    "@types/sequelize": "^4.28.9",
+    "axios": "^0.21.1",
+    "cpu-stat": "^2.0.1",
+    "discord-api-types": "^0.22.0",
+    "discord-canvas": "^1.4.1",
+    "discord.js": "^13.1.0",
+    "dotenv": "^10.0.0",
+    "forever": "^3.0.4",
+    "keyv": "^4.0.3",
+    "mariadb": "^2.5.3",
+    "mongoose": "^5.12.13",
+    "ms": "^2.1.2",
+    "parse-ms": "^2.1.0",
+    "require-all": "^3.0.0",
+    "requireall": "^1.0.0",
+    "sequelize": "^6.6.2",
+    "string-toolkit": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/keyv": "^3.1.1",
+    "@types/mongoose": "^5.11.97",
+    "@types/ms": "^0.7.31",
+    "@typescript-eslint/eslint-plugin": "^4.23.0",
+    "@typescript-eslint/parser": "^4.23.0",
+    "eslint": "^7.26.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.3.2"
+  },
+  "scripts": {
+    "p": "prettier --config .prettierrc 'src/**/*.ts' --write",
+    "start": "npm run p && tsc && node dist/src/index.js",
+    "git": "npm run p && git add . && git commit -m \"Commit\" && git push origin main",
+    "lint": "npm run p && eslint . --ext .ts"
+  },
+  "type": "module"
+}
